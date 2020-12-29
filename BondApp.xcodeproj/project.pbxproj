@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		ACDDABDD259B79EF00BEB02E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACDDABDB259B79EF00BEB02E /* Main.storyboard */; };
 		ACDDABDF259B79F600BEB02E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACDDABDE259B79F600BEB02E /* Assets.xcassets */; };
 		ACDDABE2259B79F600BEB02E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACDDABE0259B79F600BEB02E /* LaunchScreen.storyboard */; };
+		ACDDABEB259B7AFF00BEB02E /* Bond in Frameworks */ = {isa = PBXBuildFile; productRef = ACDDABEA259B7AFF00BEB02E /* Bond */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACDDABEB259B7AFF00BEB02E /* Bond in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = BondApp;
+			packageProductDependencies = (
+				ACDDABEA259B7AFF00BEB02E /* Bond */,
+			);
 			productName = BondApp;
 			productReference = ACDDABD2259B79EF00BEB02E /* BondApp.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = ACDDABC9259B79EF00BEB02E;
+			packageReferences = (
+				ACDDABE9259B7AFF00BEB02E /* XCRemoteSwiftPackageReference "Bond" */,
+			);
 			productRefGroup = ACDDABD3259B79EF00BEB02E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -338,6 +346,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ACDDABE9259B7AFF00BEB02E /* XCRemoteSwiftPackageReference "Bond" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/DeclarativeHub/Bond.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ACDDABEA259B7AFF00BEB02E /* Bond */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ACDDABE9259B7AFF00BEB02E /* XCRemoteSwiftPackageReference "Bond" */;
+			productName = Bond;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = ACDDABCA259B79EF00BEB02E /* Project object */;
 }
